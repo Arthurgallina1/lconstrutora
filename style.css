@@ -6,36 +6,40 @@
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-}
-
-body {
-    background-image: url('img/post1.png');
-    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 nav {
-    background-color: transparent;
-    border: #FFFBFF 1px solid;
-    
-    
+    background-color: transparent;  
 }
-.navbar-brand{
-   border: 1px solid white;
 
+nav.scrolled {
+    background-color:#C01D2E !important;
+  }
+
+
+#navbarNav .navbar-nav .nav-item .nav-link:hover{
+    color: var(--cor-primary);
+    border-bottom: 3px var(--cor-primary) solid;
+}
+
+.nav-link.scrolled:hover{
+    color: white !important;
+    border-bottom: 3px white solid !important;
 }
 
 #navbarNav .navbar-nav .nav-item .nav-link{
     font-size: 1.52rem;
     color: white;
     padding: 12px 35px;
-    
     margin: 5px;
-    
-    
+  
 }
+
 #navbarNav .navbar-nav .nav-item .nav-link:hover{
     color: var(--cor-primary);
     border-bottom: 3px var(--cor-primary) solid;
 }
+
 
 #navbarNav .navbar-nav .nav-item .nav-link.redes{
     font-size: 1.7rem;
@@ -48,5 +52,67 @@ nav {
     font-size: 1.75rem;
 }
 
+.carousel img {
+    height: 80vh;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.carousel-item {
+    background-image: linear-gradient(black, white);
+}
 
 
+
+#obrasIndex {
+    margin: 0% 10% 0% 10%;
+
+}
+#obrasIndex h2{
+    color: var(--cor-primary);
+    font-weight: bold; 
+}
+
+.obras-destaque {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-evenly;
+
+}
+.obras-destaque .fig-box{
+    margin-bottom: 20px;
+
+}
+
+.obras-destaque .fig-box img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2px;
+}
+.obras-destaque .fig-box .figure-caption {
+    margin: 7px;
+    font-size: 18px;
+    font-weight: 950;
+    color: black;   
+}
+
+.obras-destaque .fig-box:hover {
+    color: white;
+    background: var(--cor-primary);
+}
+.btn-todas {
+    margin: 0% 10% 0% 10%;
+    
+}
+@media screen and (max-width: 768px) {
+    .obras-destaque {
+    grid-template-columns: 90%;
+
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1170px){
+    .obras-destaque {
+        grid-template-columns: 45% 45%;
+    }
+}
