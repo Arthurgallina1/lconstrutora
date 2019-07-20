@@ -8,10 +8,12 @@
 box-sizing:border-box;
 }
 
+/*
 body {
     background-image: url('img/post1.png');
     background-size: 100%;
 }
+*/
 nav {
     background-color: transparent;
     
@@ -39,6 +41,12 @@ nav {
 #navbarNav .navbar-nav .nav-item .nav-link.redes:hover{
     transition: 0.5s linear;
     font-size: 1.85rem;
+}
+
+.carousel img {
+    max-height: 980px;
+    margin: 0 auto;
+    opacity: 0.5;
 }
 
 
