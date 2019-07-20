@@ -1,0 +1,45 @@
+:root {
+    --cor-primary: #C01D2E;
+    --cor-secundary: #FFFBFF;
+}
+*{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+body {
+    background-image: url('img/post1.png');
+    background-size: 100%;
+}
+nav {
+    background-color: transparent;
+    
+    
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link{
+    font-size: 1.4rem;
+    color: white;
+    padding: 12px 35px;
+    
+    
+}
+#navbarNav .navbar-nav .nav-item .nav-link:hover{
+    color: var(--cor-primary);
+    border-bottom: 3px var(--cor-primary) solid;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link.redes{
+    font-size: 1.7rem;
+    padding: 6px 10px !important;
+    margin: 0px 0px;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link.redes:hover{
+    transition: 0.5s linear;
+    font-size: 1.85rem;
+}
+
+
+
