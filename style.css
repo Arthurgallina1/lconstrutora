@@ -271,6 +271,13 @@ hr {
         padding: 6px 15px;
         margin: 3px; 
     }
+    #navbarNav1 .navbar-nav .nav-item .nav-link{
+        font-size: 1rem;
+        color: white;
+        padding: 6px 15px;
+        margin: 3px;
+      
+    }
     .obras-destaque {
     grid-template-columns: 90%;
     }
