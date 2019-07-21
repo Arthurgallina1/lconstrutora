@@ -16,6 +16,11 @@ nav.scrolled {
     background-color:#C01D2E !important;
   }
 
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+  }
 
 #navbarNav .navbar-nav .nav-item .nav-link:hover{
     color: var(--cor-primary);
@@ -108,7 +113,12 @@ nav.scrolled {
     color: white;
     background: var(--cor-primary);
     box-shadow: 2px 2px var(--cor-primary);
-
+}
+.obras-destaque .fig-box:hover .figure-caption {
+    color: white;
+}
+#cap:hover{
+    color: white;
 }
 .btn-todas {
     margin: 0% 10% 7% 10%; 
@@ -116,6 +126,10 @@ nav.scrolled {
 .btn-todos{
     background: #C01D2E;
     color: white;
+    padding: 7px 25px;
+    -webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
 }
 .btn-todos:hover{
     transition: all 0.3s;
@@ -138,6 +152,21 @@ nav.scrolled {
 .img-footer {
     
     margin-top: 10px;
+}
+
+
+#section img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#sobre h1 {
+    border-bottom: 1px solid var(--cor-primary);
 }
 
 @media screen and (max-width: 768px) {
