@@ -63,6 +63,14 @@ nav.scrolled {
 }
 
 
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+
+
 
 #obrasIndex {
     margin: 0% 10% 0% 10%;
@@ -99,11 +107,39 @@ nav.scrolled {
 .obras-destaque .fig-box:hover {
     color: white;
     background: var(--cor-primary);
+    box-shadow: 2px 2px var(--cor-primary);
+
 }
 .btn-todas {
-    margin: 0% 10% 0% 10%;
-    
+    margin: 0% 10% 7% 10%; 
 }
+.btn-todos{
+    background: #C01D2E;
+    color: white;
+}
+.btn-todos:hover{
+    transition: all 0.3s;
+    background: var(--cor-secundary);
+    font-weight: bold;
+    color: var(--cor-primary);
+}
+
+.page-footer {
+    background: linear-gradient(110deg, var(--cor-primary) 80%, #a8adaa 60%);
+}
+
+#ftrs{
+    font-size: 1.7rem;
+    padding: 6px 10px !important;
+    margin: 0px 0px;
+    text-decoration: none;
+    color: white;
+}
+.img-footer {
+    
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .obras-destaque {
     grid-template-columns: 90%;
@@ -115,11 +151,4 @@ nav.scrolled {
     .obras-destaque {
         grid-template-columns: 45% 45%;
     }
-}
-
-.carousel-indicators li {
-    border-radius: 12px;
-    width: 12px;
-    height: 12px;
-    background-color: #404040;
 }

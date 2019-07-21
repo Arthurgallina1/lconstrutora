@@ -3,3 +3,4 @@ $(window).scroll(function(){
     $('.nav-link').toggleClass('scrolled', $(this).scrollTop() > 350);
     
 });
+
