@@ -21,7 +21,13 @@ nav.scrolled {
     display: -webkit-flex;
     flex-wrap: wrap;
   }
-
+  .navbar-brand img {
+    width: 300px;
+    height: 60px;
+  }
+.navbar-toggler-icon {
+    color: white;
+}
 #navbarNav .navbar-nav .nav-item .nav-link:hover{
     color: var(--cor-primary);
     border-bottom: 3px var(--cor-primary) solid;
@@ -36,9 +42,20 @@ nav.scrolled {
     font-size: 1.52rem;
     color: white;
     padding: 12px 35px;
-    margin: 5px;
-  
+    margin: 5px; 
 }
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+
+#active{
+    font-size: 1.52rem;
+    color: white;
+    border-bottom: 3px solid white;
+    padding: 12px 35px;
+    margin: 5px; 
+}
+
 
 #navbarNav .navbar-nav .nav-item .nav-link:hover{
     color: var(--cor-primary);
@@ -185,11 +202,15 @@ border-radius: 25px;
     text-decoration: none;
     color: white;
 }
-.img-footer {
-    
+.img-footer .imageft1 {   
     margin-top: 10px;
-}
+    width: 80px;
+    height: 80px;
 
+}
+.imageft2{
+    display: none;
+}
 
 #section img{
     display: block;
@@ -201,8 +222,9 @@ border-radius: 25px;
     transform: translate(-50%, -50%);
 }
 
-#sobre h1 {
+#sobre h2 {
     border-bottom: 1px solid var(--cor-primary);
+    font-weight: bold;
 }
 
 
@@ -212,7 +234,7 @@ border-radius: 25px;
 }
 
 #residencial span{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     
 }
 #residencial ul {
@@ -223,7 +245,10 @@ border-radius: 25px;
     color: var(--cor-primary);
     font-weight: bold;
 }
-
+#contact h2{
+    color: var(--cor-primary);
+    font-weight: bold; 
+}
 
 hr {
     display: block;
@@ -240,14 +265,39 @@ hr {
     border-bottom: 2px solid var(--cor-primary);
  }
 @media screen and (max-width: 768px) {
+    #navbarNav .navbar-nav .nav-item .nav-link{
+        font-size: 1rem;
+        color: white;
+        padding: 6px 15px;
+        margin: 3px; 
+    }
     .obras-destaque {
     grid-template-columns: 90%;
-
+    }
+    .carousel img {
+        height: 62vh;
+        margin: 0 auto;
+        opacity: 0.8;
+    }
+    .navbar-brand img {
+        width: 200px;
+        height: 50px;
+      }
+    .imageft1 {
+        display: none;
+    }
+    .imageft2{
+        display: block;
     }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1170px){
     .obras-destaque {
         grid-template-columns: 45% 45%;
+    }
+    .carousel img {
+        height: 70vh;
+        margin: 0 auto;
+        opacity: 0.8;
     }
 }
