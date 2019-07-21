@@ -93,6 +93,10 @@ nav.scrolled {
     opacity: 0.8;
 }
 
+#carouselresidencial img {
+    height: 50vh;
+
+}
 .carousel-item {
     background-image: linear-gradient(black, white);
 }
@@ -103,13 +107,18 @@ nav.scrolled {
     width: 12px;
     height: 12px;
     background-color: #404040;
+    
 }
+
 
 
 
 #obrasIndex {
     margin: 0% 10% 0% 10%;
 
+}
+#obrasIndex a {
+    text-decoration: none;
 }
 #obrasIndex h2{
     color: var(--cor-primary);
@@ -199,6 +208,40 @@ border-radius: 25px;
     border-bottom: 1px solid var(--cor-primary);
 }
 
+
+#residencial h2{
+    color: var(--cor-primary);
+    font-weight: bold; 
+}
+
+#residencial span{
+    font-size: 1.4rem;
+    
+}
+#residencial ul {
+    width: 100%;
+}
+
+#residencial li i {
+    color: var(--cor-primary);
+    font-weight: bold;
+}
+
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-bottom: 2px solid var(--cor-primary);
+ }
 @media screen and (max-width: 768px) {
     .obras-destaque {
     grid-template-columns: 90%;
