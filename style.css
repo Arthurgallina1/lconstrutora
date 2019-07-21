@@ -52,6 +52,36 @@ nav.scrolled {
     font-size: 1.75rem;
 }
 
+#navbarNav1 .navbar-nav .nav-item .nav-link:hover{
+    color: var(white);
+    border-bottom: 3px white solid;
+}
+
+#navbarNav1 .navbar-nav .nav-item .nav-link{
+    font-size: 1.52rem;
+    color: white;
+    padding: 12px 35px;
+    margin: 5px;
+  
+}
+
+#navbarNav1 .navbar-nav .nav-item .nav-link:hover{
+    color: var(white);
+    border-bottom: 3px var(white) solid;
+}
+
+
+#navbarNav1 .navbar-nav .nav-item .nav-link.redes{
+    font-size: 1.7rem;
+    padding: 6px 10px !important;
+    margin: 0px 0px;
+}
+
+#navbarNav1 .navbar-nav .nav-item .nav-link.redes:hover{
+    transition: 0.5s linear;
+    font-size: 1.75rem;
+}
+
 .carousel img {
     height: 85vh;
     margin: 0 auto;
