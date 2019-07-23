@@ -37,7 +37,7 @@ $(window).scroll(function(){
         filtraconcluidas.className = 'btn btn-toggler';
         show(conclu);
         show(anda);
-        footer.className = 'page-footer py-2';
+        footer.className = 'page-footer py-2';  
        // obras.style.height= '100vh';
     })
 

@@ -37,11 +37,7 @@ nav.scrolled {
     color: var(--cor-primary);
     border-bottom: 3px var(--cor-primary) solid;
 }
-.page-footer.stick {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 
 .nav-link.scrolled:hover {
     color: white !important;
@@ -122,7 +118,7 @@ nav.scrolled {
 }
 
 #carouselresidencial img {
-    height: 50vh;
+    height: 57vh;
 
 }
 
@@ -371,5 +367,18 @@ hr {
         height: 70vh;
         margin: 0 auto;
         opacity: 0.8;
+    }
+    .page-footer.stick {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1171px){
+    .page-footer.stick {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
