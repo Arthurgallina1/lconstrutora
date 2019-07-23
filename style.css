@@ -7,7 +7,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', 'Roboto', sans-serif;
 }
 
 nav {
@@ -255,6 +255,7 @@ nav.scrolled {
 #sobre h5 {
     padding-top: 1vh;
     padding-bottom: 1vh;
+    line-height: 1.35em;
 }
 
 #sobre {
