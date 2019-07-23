@@ -262,7 +262,7 @@ nav.scrolled {
 }
 
 #sobre h2 {
-    border-bottom: 1px solid var(--cor-primary);
+    
     font-weight: bold;
     color: #C01D2E;
 }
