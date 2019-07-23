@@ -32,6 +32,11 @@ nav.scrolled {
     color: var(--cor-primary);
     border-bottom: 3px var(--cor-primary) solid;
 }
+.page-footer.stick {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 .nav-link.scrolled:hover{
     color: white !important;
@@ -138,7 +143,9 @@ nav.scrolled {
     color: var(--cor-primary);
     font-weight: bold; 
 }
-
+#obrasIndex span {
+    color: var(--cor-primary);
+}
 .obras-destaque {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
@@ -149,7 +156,9 @@ nav.scrolled {
     margin-bottom: 20px;
 
 }
-
+.switch-toggle{
+    width: 50%;
+}
 .obras-destaque .fig-box img {
     width: 100%;
     height: 300px;
@@ -190,6 +199,18 @@ border-radius: 25px;
     font-weight: bold;
     color: var(--cor-primary);
 }
+.btn-toggler{
+    background: var(--cor-secundary);
+    color: var(--cor-primary);
+    margin: 0px !important;
+}
+.btn-toggler.active{
+    background: var(--cor-primary);
+    color: var(--cor-secundary);
+    margin: 0px !important;
+}
+
+
 
 .page-footer {
     background: linear-gradient(110deg, var(--cor-primary) 80%, #a8adaa 60%);
