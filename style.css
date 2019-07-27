@@ -246,6 +246,9 @@ nav.scrolled {
     color: white;
 }
 
+
+
+
 .img-footer .imageft1 {
     margin-top: 10px;
     width: 80px;
@@ -323,7 +326,7 @@ hr {
     display: block;
     position: relative;
     padding: 0;
-    margin: 8px auto;
+    margin: 4px auto;
     height: 0;
     width: 100%;
     max-height: 0;
@@ -334,6 +337,14 @@ hr {
     border-bottom: 2px solid var(--cor-primary);
 }
 
+.contato-icon {
+    color: var(--cor-primary);
+    font-size: 1.5rem;
+    text-decoration: none !important;
+}
+.contato-icon a {
+    text-decoration: none !important;
+}
 @media screen and (max-width: 768px) {
     #navbarNav .navbar-nav .nav-item .nav-link {
         font-size: 1rem;
