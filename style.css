@@ -148,9 +148,11 @@ nav.scrolled {
     color: var(--cor-primary);
     font-weight: bold;
 }
+
 #obrasIndex span {
     color: var(--cor-primary);
 }
+
 .obras-destaque {
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
@@ -162,9 +164,11 @@ nav.scrolled {
     margin-bottom: 20px;
 
 }
-.switch-toggle{
+
+.switch-toggle {
     width: 50%;
 }
+
 .obras-destaque .fig-box img {
     width: 100%;
     height: 300px;
@@ -211,18 +215,24 @@ nav.scrolled {
     font-weight: bold;
     color: var(--cor-primary);
 }
-.btn-toggler{
+
+.btn-toggler {
     background: var(--cor-secundary);
     color: var(--cor-primary);
     margin: 0px !important;
 }
-.btn-toggler.active{
+
+.btn-toggler.active {
     background: var(--cor-primary);
     color: var(--cor-secundary);
     margin: 0px !important;
 }
 
-
+#contact-box {
+    background-color: rgba(192, 29, 46, 1);
+    border-radius: 25px;
+    margin-top: 1vh;
+}
 
 .page-footer {
     background: linear-gradient(110deg, var(--cor-primary) 80%, #a8adaa 60%);
@@ -258,12 +268,18 @@ nav.scrolled {
 }
 
 #sobre h2 {
-    
+
     font-weight: bold;
     color: #C01D2E;
 }
 
 #sobre h4 {
+    border-bottom: 1px solid var(--cor-primary);
+    font-weight: bold;
+    color: #C01D2E;
+}
+
+#contact-info {
     border-bottom: 1px solid var(--cor-primary);
     font-weight: bold;
     color: #C01D2E;
@@ -368,6 +384,7 @@ hr {
         margin: 0 auto;
         opacity: 0.8;
     }
+
     .page-footer.stick {
         position: absolute;
         bottom: 0;
@@ -375,7 +392,7 @@ hr {
     }
 }
 
-@media screen and (min-width: 1171px){
+@media screen and (min-width: 1171px) {
     .page-footer.stick {
         position: absolute;
         bottom: 0;
