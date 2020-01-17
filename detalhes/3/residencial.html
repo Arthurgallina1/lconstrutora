@@ -17,12 +17,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../main.js"></script>
     <title>Lorenzetti Construtora</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144356970-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144356970-1');
+    </script>
+    <script src="//code.jivosite.com/widget.js" data-jv-id="I4djSTpmqq" async></script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark py-2 px-4" id="mainnav" style="background-color: #C01D2E">
-            <a class="navbar-brand p-2" href="#">
+            <a class="navbar-brand p-2" href="../../index.html" href="#">
                 <img src="../../img/logo_br_t.png" alt="logo_bg_vermelho" width="300" height="60">
             </a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -47,9 +58,9 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap" id="redes">
-                    <li class="nav-item"><a class="nav-link redes" href="https://www.facebook.com/lorenzetticonstrutora/"><i class="fa fa-facebook mr-1"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link redes" href="https://www.instagram.com/lorenzetticonstrutora/"><i class="fa fa-instagram"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link redes" href=""><i class="fa fa-whatsapp"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link redes" target="_blank" href="https://www.facebook.com/lorenzetticonstrutora/"><i class="fa fa-facebook mr-1"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link redes" target="_blank" href="https://www.instagram.com/lorenzetticonstrutora/"><i class="fa fa-instagram"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link redes" target="_blank" href=""><i class="fa fa-whatsapp"></i></a> </li>
                 </ul>
             </div>
         </nav>
@@ -165,62 +176,83 @@
                         <div class="col-sm-2"><span>Lavanderia</span> </div>
                         <div class="col-sm-1"><span>1</span></div>
                     </div>
-                    <div class="row justify-content-center mt-5">
-                        <div class="btn-todas">
-                            <button onclick="location.href ='../../contact.html'" class="btn btn-todos">Mais informações</button>
+                    <div class="container mt-5">
+                            <div class="my-4 text-center">
+                                    <h2 class="">MAIS INFORMAÇÕES</h2> Entre em contato conosco!
+                            </div>
+                        <div class="row text-center">
+                            <div class="col-sm-12">
+                              
+                                <form action="../../mail_send.php" method="post" class="mb-5">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nome" value="" required placeholder="Nome*">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" required placeholder="E-mail*">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="telefone" value="" placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="assunto" required placeholder="Assunto*"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="mensagem" rows="5" required placeholder="Mensagem*"></textarea>
+                        </div>
+                       
+
+                        <br>
+                        <button type="submit" class="btn btn-todos"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><strong> Enviar</strong> </button>
+                       
+                            
+                        </button>
+                    </form>
+                            </div>
                 </div>
 
 
             </div>
         </div>
     </section>
-    <section>
-        <footer class="page-footer py-2">
-            <div class="container-fluid">
-                <div class="row mt-2">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 text-white">
-                        <h4 class="text-uppercase text-white">endereço</h4>
-                        <ul class="list-unstyled">
-
-                            <li>
-                                <a style="color: #a8adaa">Rua Itapuã, 1255. </a>
-                            </li>
-                            <li>
-                                <a style="color: #a8adaa">Pato Branco, Paraná.</a>
-                            </li>
-                        </ul>
+    <section id="footer">
+            <footer class="page-footer py-2">
+                <div class="container-fluid">
+                    <div class="row mt-2">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2 text-white text-center">
+                            <h4 class="text-uppercase text-white"><strong>TELEFONE</strong> </h4>
+                            <ul class="list-unstyled">
+                                    <li>
+                                        <a style="color: #a8adaa;" href="tel:+55-46-99138-6488"><i class="fa fa-phone"></i> (46) 99138-6488</a></a>
+                                    </li>
+                                    <li>
+                                        <a style="color: #a8adaa;" href="tel:+55-46-99122-6182"><i class="fa fa-phone"></i> (46) 99122-6182</a></a>
+                                    </li>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-3 text-white text-center">
+                            <h4 class="text-uppercase text-white"><strong>E-MAIL</strong>  </h4>
+                           <ul class="list-unstyled">
+                                <li>
+                                       <a href="mailto:contato@lorenzetticonstrutora.com.br" style="color: #a8adaa;font-family: Poppins, Arial, Helvetica, sans-serif;"> contato@lorenzetticonstrutora.com.br</a>
+                                </li>
+                           </ul>
+                               
+                        </div>
+                       
+                        <div class="col-lg-2 text-white text-center mx-auto">
+                            <h4 class="text-uppercase text-white"><strong> REDES SOCIAIS</strong></h4>
+                            <ul class="nav navbar-nav flex-row justify-content-center  flex-nowrap " id="redes">
+                                <li class="nav-item "><a style="color: #a8adaa" class="nav-link redes" target="_blank" href="https://www.facebook.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-facebook mr-1"></i></a> </li>
+                                <li class="nav-item text-center"><a style="color: #a8adaa" class="nav-link redes" target="_blank" href="https://www.instagram.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-instagram"></i></a> </li>
+                                <li class="nav-item text-center"><a style="color: #a8adaa" class="nav-link redes" target="_blank" href="https://wa.me/554699138-6488" id="ftrs"><i class="fa fa-whatsapp"></i></a> </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-2 img-footer ml-5 text-center"><img src="../../img/simbolo_vermelho_bg_transparente.png" alt="simbolo vermelho" srcset="" class="imageft1"><img src="../../img/simbolo_branco_bg_transparente.png" class="imageft2" alt="simbolo branco" srcset="" width="80" height="80"></div>
+        
                     </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 text-white">
-                        <h4 class="text-uppercase text-white">CONTATO</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a style="color: #a8adaa"></i> (46) 99138-6488</a>
-                            </li>
-                            <li>
-                                <a style="color: #a8adaa"></i> (46) 99122-6122</a>
-                            </li>
-                            <li>
-                                <a style="color: #a8adaa">lorenzetticonstrutora@gmail.com</a>
-                            </li>
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 text-white">
-                        <h4 class="text-uppercase text-white">REDES SOCIAIS</h4>
-                        <ul class="nav navbar-nav flex-row flex-nowrap" id="redes">
-                            <li class="nav-item"><a style="color: #a8adaa" class="nav-link redes" href="https://www.facebook.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-facebook mr-1"></i></a> </li>
-                            <li class="nav-item"><a style="color: #a8adaa" class="nav-link redes" href="https://www.instagram.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-instagram"></i></a> </li>
-                            <li class="nav-item"><a style="color: #a8adaa" class="nav-link redes" href="https://wa.me/554699138-6488" id="ftrs"><i class="fa fa-whatsapp"></i></a> </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-1 img-footer ml-5"><img src="../../img/simbolo_vermelho_bg_transparente.png" alt="simbolo vermelho" srcset="" class="imageft1"><img src="../../img/simbolo_branco_bg_transparente.png" class="imageft2" alt="simbolo branco" srcset="" width="80" height="80"></div>
-
                 </div>
-            </div>
-        </footer>
-    </section>
+            </footer>
+        </section>
 </body></html>

@@ -10,6 +10,9 @@
     font-family: 'Helvetica', 'Roboto', sans-serif;
 }
 
+.body {
+    min-width: 100%;
+}
 nav {
     background-color: transparent;
 }
@@ -17,11 +20,27 @@ nav {
 nav.scrolled {
     background-color: #C01D2E !important;
 }
+.vertical-center{
+    display: flex;
+    align-items: center;
+    color:  rgba(0, 0, 0, 0.75);
+   
+}
 
 .equal {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
+}
+.jumbotron { 
+    background-image: url('img/index2.webp');
+    background-size: cover;
+    height: 100vh;
+    
+    
+    opacity: 1;
+    
+    
 }
 
 .navbar-brand img {
@@ -112,7 +131,7 @@ nav.scrolled {
 }
 
 .carousel img {
-    height: 85vh;
+    height: 89vh;
     margin: 0 auto;
     opacity: 0.8;
 }
@@ -125,7 +144,9 @@ nav.scrolled {
 .carousel-item {
     background-image: linear-gradient(black, white);
 }
-
+#footer ul li a {
+    font-size: 1.4rem;
+}
 
 .carousel-indicators li {
     border-radius: 12px;
@@ -198,6 +219,28 @@ nav.scrolled {
 
 .btn-todas {
     margin: 0% 10% 7% 10%;
+}
+.btn-jumbo {
+    background: #C01D2E;
+    color: white;
+    padding: 12px 60px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 1px solid var(--cor-primary);
+}
+.btn-todos:hover {
+    transition: all 0.3s;
+    background: var(--cor-secundary);
+    font-weight: bold;
+    color: var(--cor-primary);
+    
+}
+.btn-jumbo:hover {
+    transition: all 0.3s;
+    background: transparent;
+    
+    color: var(--cor-primary);
 }
 
 .btn-todos {
@@ -345,7 +388,21 @@ hr {
 .contato-icon a {
     text-decoration: none !important;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) and (min-width: 330px){
+    .btn-jumbo {
+        background: #C01D2E;
+        color: white;
+        padding: 6px 30px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        border: 1px solid var(--cor-primary);
+    }
+
+    .jumbotron h1 {
+       font-size: 40px;
+    }
     #navbarNav .navbar-nav .nav-item .nav-link {
         font-size: 1rem;
         color: white;
@@ -372,8 +429,9 @@ hr {
     }
 
     .navbar-brand img {
-        width: 200px;
-        height: 50px;
+        width: 180px;
+        height: 40px;
+        
     }
 
     .imageft1 {
@@ -381,11 +439,102 @@ hr {
     }
 
     .imageft2 {
-        display: block;
+        display: none;
     }
+   #footer ul li a {
+       font-size: 1.1rem;
+   }
+   #footer #ftrs {
+       font-size: 1.3rem !important;
+   }
+   .page-footer {
+        background: var(--cor-primary);
+    }
+    #residencial li i{
+        padding-left: 12px;
+        
+    }
+    #residencial  span{
+        font-size: 16px;
+        padding-left: 10px;
+        
+    }
+  
+}
+@media screen and (max-width: 329px){
+    .btn-jumbo {
+        background: #C01D2E;
+        color: white;
+        padding: 10px 20px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        border: 1px solid var(--cor-primary);
+    }
+
+    .jumbotron h1 {
+       font-size: 36px;
+    }
+    #navbarNav .navbar-nav .nav-item .nav-link {
+        font-size: 1rem;
+        color: white;
+        padding: 6px 15px;
+        margin: 3px;
+    }
+
+    #navbarNav1 .navbar-nav .nav-item .nav-link {
+        font-size: 1rem;
+        color: white;
+        padding: 6px 15px;
+        margin: 3px;
+
+    }
+
+    .obras-destaque {
+        grid-template-columns: 90%;
+       
+    }
+    #residencial li i{
+        padding-left: 15px;
+    }
+
+    .carousel img {
+        height: 62vh;
+        margin: 0 auto;
+        opacity: 0.8;
+    }
+
+    .navbar-brand img {
+        width: 180px;
+        height: 40px;
+        
+    }
+
+    .imageft1 {
+        display: none;
+    }
+
+    .imageft2 {
+        display: none;
+    }
+   #footer ul li a {
+       font-size: 1.1rem;
+   }
+   #footer #ftrs {
+       font-size: 1.1rem !important;
+   }
+   .page-footer {
+    background: var(--cor-primary);
+}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1380px) {
+    .nav-link {
+        font-size: 1rem !important;
+    }
+    a {
+        font-size: 1rem !important;
+    }
     .obras-destaque {
         grid-template-columns: 45% 45%;
     }
@@ -403,7 +552,7 @@ hr {
     }
 }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1381px) {
     .page-footer.stick {
         position: absolute;
         bottom: 0;

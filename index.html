@@ -16,12 +16,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <title>Lorenzetti Construtora</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144356970-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144356970-1');
+    </script>
+    <script src="//code.jivosite.com/widget.js" data-jv-id="I4djSTpmqq" async></script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-xl navbar-dark py-2 px-4 fixed-top" id="mainnav">
-            <a class="navbar-brand p-2" href="#">
+            <a class="navbar-brand p-2" href="index.html" href="index.html">
                 <img src="img/logo_br_t.png" alt="logo_bg_vermelho" >
             </a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -47,14 +58,33 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap" id="redes">
-                    <li class="nav-item"><a class="nav-link redes" href="https://www.facebook.com/lorenzetticonstrutora/"><i class="fa fa-facebook mr-1"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link redes" href="https://www.instagram.com/lorenzetticonstrutora/"><i class="fa fa-instagram"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link redes" href="https://wa.me/554699138-6488"><i class="fa fa-whatsapp"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link redes" target="_blank" href="https://www.facebook.com/lorenzetticonstrutora/" ><i class="fa fa-facebook mr-1"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link redes" target="_blank" href="https://www.instagram.com/lorenzetticonstrutora/" ><i class="fa fa-instagram"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link redes" target="_blank" href="https://wa.me/554699138-6488"><i class="fa fa-whatsapp"></i></a> </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div>
+    <div class="jumbotron vertical-center">
+        <br>
+        <br>
+        <br>
+        <div class="container ">
+            <div class="row text-center ">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8"> 
+                        <h1 class="display-4">CONSTRUINDO</h1> <h1 class="display-1"><strong style="font-weight: 750">SONHOS</strong> </h1>             
+                        
+                        <button onclick="location.href = 'vendas.html' "class="btn btn-jumbo my-4"><strong>CONHEÇA NOSSOS IMÓVEIS </strong> </button>
+                    </div>
+                <div class="col-lg-2"></div>
+            </div>
+           
+        </div>
+       
+      </div>
+    
+   <!--  <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -63,13 +93,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/index1.jpg" alt="Primeiro Slide">
+                    <img class="d-block w-100" src="https://picsum.photos/id/417/2896/1944" alt="Primeiro Slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/index2.jpg" alt="Segundo Slide">
+                    <img class="d-block w-100" src="https://picsum.photos/id/1067/5760/3840" alt="Segundo Slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/index3.jpg" alt="Terceiro Slide">
+                    <img class="d-block w-100" src="https://picsum.photos/id/283/3823/2538" alt="Terceiro Slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -81,11 +111,11 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-    </div>
+    </div>-->
     <section id="obrasIndex">
-        <div class="my-5">
+        <div class="my-4">
             <h2 class="text-center">OBRAS EM DESTAQUE</h2>
-            <p class="text-center">À VENDA de alto padrão com qualidade de construção e detalhe nos acabamentos. Conheça nossas obras em andamento.</p>
+            <p class="text-center">Empreendimentos de alto padrão com qualidade de construção e detalhe nos acabamentos. Conheça nossas obras.</p>
         </div>
         <div class="obras-destaque text-center">
             <figure class="fig-box">
@@ -94,7 +124,7 @@
                             <figcaption class="figure-caption" id="cap">Sobrado I</figcaption>
                          </a>
             </figure>
-            <figure class="fig-box">
+            <!-- <figure class="fig-box">
                     <a href="detalhes/4/residencial.html">
                         <img src="detalhes/4/Capa.jpg" alt="Capa Res IV">
                         <figcaption class="figure-caption" id="cap">Residencial IV</figcaption>
@@ -105,19 +135,31 @@
                     <img src="detalhes/5/Capa.jpg" alt="Capa Res V">
                     <figcaption class="figure-caption" id="cap">Residencial V</figcaption>
                  </a>
-            </figure>
-            <figure class="fig-box">
+            </figure> -->
+            <!-- <figure class="fig-box">
                     <a href="detalhes/6/residencial.html">
-                        <img src="detalhes/6/Capa.jpeg" alt="Capa Res VI">
+                        <img src="detalhes/6/res6_7.jpeg" alt="Capa Res VI">
                         <figcaption class="figure-caption" id="cap">Residencial VI</figcaption>
                      </a>
-            </figure>
+            </figure> -->
             <figure class="fig-box">
                     <a href="detalhes/7/residencial.html">
-                        <img src="detalhes/7/Capa.jpeg" alt="Capa Res VII">
+                        <img src="detalhes/7/res7.jpg" alt="Capa Res VII">
                         <figcaption class="figure-caption" id="cap">Residencial VII</figcaption>
                      </a>
             </figure>
+            <figure class="fig-box">
+                <a href="detalhes/res8/residencial.html">
+                    <img src="detalhes/res8/1.jpg" alt="Capa Res 8">
+                    <figcaption class="figure-caption" id="cap">Residencial VIII</figcaption>
+                 </a>
+             </figure>
+             <figure class="fig-box">
+                <a href="detalhes/9/residencial.html">
+                    <img src="detalhes/9/1.jpg" alt="Capa Res 9">
+                    <figcaption class="figure-caption" id="cap">Residencial IX</figcaption>
+                 </a>
+             </figure>
     
            
         </div>
@@ -125,48 +167,42 @@
             <button onclick="location.href = 'vendas.html' "class="btn btn-todos">Ver todas</button>
         </div>
     </section>
-<section>
+<section id ="footer">
     <footer class="page-footer py-2">
         <div class="container-fluid">
             <div class="row mt-2">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 text-white">
-                    <h4 class="text-uppercase text-white">endereço</h4>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2 text-white text-center">
+                    <h4 class="text-uppercase text-white"><strong>TELEFONE</strong> </h4>
                     <ul class="list-unstyled">
-
+                            <li>
+                                    <a style="color: #a8adaa;" href="tel:+55-46-99138-6488"><i class="fa fa-phone"></i> (46) 99138-6488</a></a>
+                                </li>
+                                <li>
+                                    <a style="color: #a8adaa;" href="tel:+55-46-99122-6182"><i class="fa fa-phone"></i> (46) 99122-6182</a></a>
+                                </li>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 text-white text-center">
+                    <h4 class="text-uppercase text-white"><strong>E-MAIL</strong>  </h4>
+                   <ul class="list-unstyled">
                         <li>
-                            <a style="color: #a8adaa"><i class="fa fa-map-marker"></i> Rua Itapuã, 1255.</a>
+                                <a href="mailto:contato@lorenzetticonstrutora.com.br" id="mailfooter" style="color: #a8adaa;font-family: Poppins, Arial, Helvetica, sans-serif;"> contato@lorenzetticonstrutora.com.br</a>
                         </li>
-                        <li>
-                            <a style="color: #a8adaa">&nbsp &nbspPato Branco, Paraná.</a>
-                        </li>
+                   </ul>
+                       
+                </div>
+               
+                <div class="col-lg-2 text-white text-center mx-auto">
+                    <h4 class="text-uppercase text-white"><strong> REDES SOCIAIS</strong></h4>
+                    <ul class="nav navbar-nav flex-row justify-content-center  flex-nowrap " id="redes">
+                        <li class="nav-item "><a style="color: #a8adaa" class="nav-link redes" target="_blank" href="https://www.facebook.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-facebook mr-1"></i></a> </li>
+                        <li class="nav-item text-center"><a style="color: #a8adaa" class="nav-link redes" target="_blank" href="https://www.instagram.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-instagram"></i></a> </li>
+                        <li class="nav-item text-center"><a style="color: #a8adaa" class="nav-link redes" target="_blank" href="https://wa.me/554699138-6488" id="ftrs"><i class="fa fa-whatsapp"></i></a> </li>
                     </ul>
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 text-white">
-                    <h4 class="text-uppercase text-white">CONTATO </h4>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a style="color: #a8adaa"><i class="fa fa-phone"></i> (46) 99138-6488</a></a>
-                        </li>
-                        <li>
-                            <a style="color: #a8adaa"><i class="fa fa-phone"></i> (46) 99122-6122</a></a>
-                        </li>
-                        <li>
-                            <a style="color: #a8adaa"><i class="fa fa-inbox"></i> lorenzetticonstrutora@gmail.com</a>
-                        </li>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 text-white">
-                    <h4 class="text-uppercase text-white">REDES SOCIAIS</h4>
-                    <ul class="nav navbar-nav flex-row flex-nowrap" id="redes">
-                        <li class="nav-item"><a style="color: #a8adaa" class="nav-link redes" href="https://www.facebook.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-facebook mr-1"></i></a> </li>
-                        <li class="nav-item"><a style="color: #a8adaa" class="nav-link redes" href="https://www.instagram.com/lorenzetticonstrutora/" id="ftrs"><i class="fa fa-instagram"></i></a> </li>
-                        <li class="nav-item"><a style="color: #a8adaa" class="nav-link redes" href="https://wa.me/554699138-6488" id="ftrs"><i class="fa fa-whatsapp"></i></a> </li>
-                    </ul>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-1 img-footer ml-5"><img src="img/simbolo_vermelho_bg_transparente.png" alt="simbolo vermelho" srcset="" class="imageft1"><img src="img/simbolo_branco_bg_transparente.png" class="imageft2" alt="simbolo branco" srcset="" width="80" height="80"></div>
+                
+                <div class="col-lg-2 img-footer ml-5 text-center"><img src="img/simbolo_vermelho_bg_transparente.png" alt="simbolo vermelho" srcset="" class="imageft1"><img src="img/simbolo_branco_bg_transparente.png" class="imageft2" alt="simbolo branco" srcset="" width="80" height="80"></div>
 
             </div>
         </div>
